@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <h3>Your ears are in for a treat today...</h3>
+      <% @concert.each do |concert| %> 
+          <div class="col-md-4">
+            <p>Artist: <%= concert.artist %></p>
+            <p>Date: <%= concert.date %></p>
+            <p>Venue: <%= concert.venue %></p>
+            <p>City: <%= concert.city %></p>
+            <p>Ticket Price: $ <%= concert.ticket_price %></p>
+            <p>Description: <%= concert.description %></p>
+            <br>
+          </div>
+      <% end %>
+  </div>
+</div>
+
+<!-- Treat it like an array -->
